@@ -1,14 +1,17 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: white;   
+    background-color: white; 
+    /* text-align: center;  */
 }
 .main{
-    
-    margin: 80px 587px 110px 590px;
-    padding: 1px;
-    /*text-align: center;*/
+    /* margin: 80px 580px 110px 585px; */
+    height: 539px;
+    width: 370px;
+    margin: 20px auto 100px auto ;
+    padding: 1px 1px 0px 1px;
     border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*Header Part*/
 
@@ -20,10 +23,15 @@ body{
     /*position: absolute;*/
     left :10px;
     padding: 5px;
+    
+}
+.heading p{
+    font-weight: 200px;
+    font-size: small;
 }
 .minimise{
     /*position:absolute;*/
-    left: 180px;
+    left: 170px;
 }
 .maximize{
     /*position: absolute;*/
@@ -31,7 +39,7 @@ body{
 }
 .close{
     /*position: absolute;*/
-    left: 210px;
+    left: 230px;
 
 }
 
@@ -43,10 +51,16 @@ body{
     margin: 0px;
     padding: 0px;
 }
-
-
+.sub-heading{
+    margin-top: 5px;
+}
+.sub-heading p{
+    font-size:20px;
+    font-weight: 500;
+}
 .hamburger_icon{
     left:10px;
+    padding: 5px;
     top:3px;
 }
 
@@ -56,52 +70,89 @@ body{
 }
 
 .previous_result{
-    left:200px;
+    left:205px;
     top:3px;
 }
 
 /* Calculation view*/
 
-.calculation-view{
-    padding: 10px;
+
+.pre-calculation{
+    /* padding: 10px; */
+    margin: 10px 5px 10px 10px;
+    /* margin-right: 5px; */
+    left: 335px;
 }
 .calculation{
-    margin-top: 30px;
-    left:300px
+    margin-top: 0px;
+    left:335px
 }
 .calculation span{
     font-weight: 700;
     font-size: 50px;
+    /* padding: 5px; */
 }
 
 /*ALL KEYS*/
 
 .all-keys{
-    padding: 5px;
+    margin: 2px;
 }
+
+
 .key-row{
-    margin:2px 5px 2px 5px;
+    margin-bottom: 2px;
+}
+/* 1st Line Of KEY */
+.row-one{
+    margin-top: 17px ;
+    margin-bottom: 5px;
+}
+.fkeys *{
+    margin: 0px;
+}
+.fkeys{
+    height: 40px;
+    width : 70px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: white;
+    text-align: center;
+
+}
+/* Keys */
+.keys *{
+    margin:0px;
 }
 .keys{
-    margin:5px 10px 10px 5px;
-    padding:5px 10px 10px 5px;
+    height: 50px;
+    width: 87.5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: white;
+    text-align: center;    
+}
+.element{
+    top:10px;
 }
 
 
 /*Special*/
 .flex-container {
     display: flex;
-    flex-wrap:justify;
+    flex-wrap:wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
   }
-.flex-container > div {
-    background-color: #f1f1f1;
-    width: 50px;
-    margin: 5px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
+.flex-row-conatiner{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .no-margin-padding{
     margin: 0px;
     padding: 0px;
