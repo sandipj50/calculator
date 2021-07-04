@@ -6,13 +6,16 @@ body{
 }
 .main{
     /* margin: 80px 580px 110px 585px; */
-    height: 539px;
-    width: 370px;
+    height: 527px;
+    width: 365px;
     margin: 20px auto 100px auto ;
     padding: 1px 1px 0px 1px;
     border: 2px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* h3{
+    font-weight: 100;
+} */
 /*Header Part*/
 
 .heading *{
@@ -31,21 +34,18 @@ body{
 }
 .minimise{
     /*position:absolute;*/
-    left: 170px;
+    left: 188px;
 }
 .maximize{
     /*position: absolute;*/
-    left: 200px;
+    left: 215px;
 }
 .close{
     /*position: absolute;*/
-    left: 230px;
-
+    left: 240px;
 }
 
 /*Sub heading*/
-
-
 
 .sub-heading *{
     margin: 0px;
@@ -56,7 +56,7 @@ body{
 }
 .sub-heading p{
     font-size:20px;
-    font-weight: 500;
+    font-weight: bold;
 }
 .hamburger_icon{
     left:10px;
@@ -70,7 +70,7 @@ body{
 }
 
 .previous_result{
-    left:205px;
+    left:218px;
     top:3px;
 }
 
@@ -85,7 +85,7 @@ body{
 }
 .calculation{
     margin-top: 0px;
-    left:335px
+    left:331px
 }
 .calculation span{
     font-weight: 700;
@@ -96,27 +96,23 @@ body{
 /*ALL KEYS*/
 
 .all-keys{
-    margin: 2px;
+    margin: 1px;
 }
-
-
 .key-row{
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 /* 1st Line Of KEY */
 .row-one{
     margin-top: 17px ;
     margin-bottom: 5px;
 }
+
 .fkeys *{
     margin: 0px;
 }
 .fkeys{
     height: 40px;
-    width : 70px;
-    margin-left: 1px;
-    margin-right: 1px;
-    background-color: white;
+    width : 59px;
     text-align: center;
 
 }
@@ -129,13 +125,41 @@ body{
     width: 87.5px;
     margin-left: 1px;
     margin-right: 1px;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;    
 }
-.element{
-    top:10px;
+
+.fkeys span p{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+.fkeys-not-transparent  span p{
+    font-weight: 550;
 }
 
+.element{
+    top:13px;
+}
+.row-one-highlight{
+    top: 13px;
+    
+}
+.element h3{
+    font-size: 1rem;
+    font-weight:550;
+}
+.element-font-weight{
+    font-weight: 300;
+}
+ .keys:hover{
+     background-color:rgba(170, 155, 155,0.5) ;
+     border: 1px solid grey;
+     /* opacity: 60%; */
+ }
+ .fkeys:hover{
+     background-color: rgba(170, 155, 155,0.5);
+     border: 1px solid grey;
+ }
 
 /*Special*/
 .flex-container {
@@ -165,5 +189,33 @@ body{
     display: inline-block;
 }
 .grey{
-    background-color: #f3f3f3;
+    background-color: rgba(243, 243, 243)
+}
+.grey-opac{
+    background-color: rgba(255,255,255,0);
+}
+.white-opac{
+    background-color: rgba(255,255,255,0.6);
+}
+.white{
+    background-color: rgba(255, 255, 255, 1);
+}
+.bottom-mar{
+    margin-bottom: 0px;
+}
+.opac{
+    opacity: 60%;
+}
+.not-opac{
+    opacity: 50%;
+}
+.blue{
+    background-color: rgb(165, 204, 236);
+}
+.divide{
+    font-size: 1.7rem;
+    color: rgb(66, 61, 61);
+}
+.equal{
+    font-size: 1.5rem;
 }
