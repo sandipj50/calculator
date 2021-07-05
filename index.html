@@ -42,10 +42,10 @@
 
         <div class = "calculation-view">
             <div class="pre-calculation pos-relative">
-                <span class="count">0</span>
+                <p class="pre-count" id="history-value"></p>
             </div>
             <div class="calculation pos-relative ">
-                <span class="count">0</span>
+                <p class="count" id="output-value"></p>
             </div>
 
         </div>
@@ -74,31 +74,31 @@
             </div>
             <div class="key-row show flex-container">
                 <div class="keys white-opac">
-                    <span class="element pos-relative" ><p>%</p></span>
+                    <span class="element pos-relative operator" id="%" ><p>%</p></span>
                 </div>
-                <div class="keys white-opac">
-                    <span class="element pos-relative white-opac" ><p>CE</p></span>
+                <div class="keys white-opac ">
+                    <span class="element pos-relative white-opac operator" id="clear" ><p>CE</p></span>
                 </div>
-                <div class="keys white-opac">
-                    <span class="element pos-relative" ><p>C</p></span>
+                <div class="keys white-opac operator">
+                    <span class="element pos-relative operator" id=""><p>C</p></span>
                 </div>
-                <div class="keys white-opac">
-                    <span class="element pos-relative" ><i class="far fa-times-circle"></i></span>
+                <div class="keys white-opac operator">
+                    <span class="element pos-relative operator" id="backspace"><i class="far fa-times-circle"></i></span>
                 </div>
             </div>
 
             <div class="key-row show flex-container ">
                 <div class="keys white-opac ">
-                    <span class="element pos-relative" ><p><sup>1</sup>&frasl;<sub>x</sub></p></span>
+                    <span class="element pos-relative operator"id="1/X" ><p><sup>1</sup>&frasl;<sub>x</sub></p></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element pos-relative" ><p>x<sup>2</sup></p></span>
+                    <span class="element pos-relative operator" id="X2" ><p>x<sup>2</sup></p></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element pos-relative" ><p>&#8730;x</p></span>
+                    <span class="element pos-relative operator"id="root" ><p>&#8730;x</p></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element pos-relative" >
+                    <span class="element pos-relative operator" id="/" >
                         <p class="divide">&#247;</p>
                         <!-- <i class="fas fa-divide"></i> -->
                     </span>
@@ -108,17 +108,17 @@
             </div>
             <div class="key-row show flex-container ">
                 <div class="keys white">
-                    <span class="element pos-relative" ><h3>7</h3></span>
+                    <span class="element pos-relative number" id="7"><h3>7</h3></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>8</h3></span>
+                    <span class="element  pos-relative number" id="8"><h3>8</h3></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>9</h3></span>
+                    <span class="element  pos-relative number"id="9" ><h3>9</h3></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element  pos-relative " >
-                        <p>&#9587;</p>
+                    <span class="element  pos-relative operator " id="*">
+                        <p class="multiplication">&#9587;</p>
                         <!-- <i class="fas fa-times"></i> -->
                     </span>
                 </div>
@@ -126,16 +126,16 @@
             </div>
             <div class="key-row  flex-container">
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>4</h3></span>
+                    <span class="element  pos-relative number" id="4" ><h3>4</h3></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>5</h3></span>
+                    <span class="element  pos-relative number" id="5"><h3>5</h3></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>6</h3></span>
+                    <span class="element  pos-relative number" id="6" ><h3>6</h3></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element  pos-relative" >
+                    <span class="element  pos-relative operator" id="-">
                         <p>&#9472;</p>
                         <!-- <i class="fas fa-minus"></i> -->
                     </span>
@@ -144,16 +144,19 @@
             </div>
             <div class="key-row show flex-container">
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>1</h3></span>
+                    <!-- <button class="elment pos-relative">1</button>
+
+                    </button> -->
+                    <span class="element  pos-relative number" id="1"><h3>1</h3></span>
                 </div>
-                <div class="keys white">
-                    <span class="element  pos-relative" ><h3>2</h3></span>
+                <div class="keys white" >
+                    <span class="element  pos-relative number" id="2" ><h3>2</h3></span>
                 </div>
                 <div class="keys white ">
-                    <span class="element  pos-relative" ><h3>3</h3></span>
+                    <span class="element  pos-relative number" id="3"><h3>3</h3></span>
                 </div>
                 <div class="keys white-opac">
-                    <span class="element  pos-relative" >
+                    <span class="element  pos-relative operator"  id="+">
                         <p>&#9547;</p>
                         <!-- <i class="fas fa-plus"></i> -->
                     </span>
@@ -165,13 +168,13 @@
                     <span class="element  pos-relative"><img src="https://img.icons8.com/windows/30/000000/plus-slash-minus.png"/></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>0</h3></span>
+                    <span class="element  pos-relative number" id="0"><h3>0</h3></span>
                 </div>
                 <div class="keys white">
-                    <span class="element  pos-relative" ><h3>.</h3></span>
+                    <span class="element  pos-relative number" id="." ><h3>.</h3></span>
                 </div>
                 <div class="keys blue">
-                    <span class="element  pos-relative" >
+                    <span class="element  pos-relative operator" id="=" >
                         <p class="equal">&#61;</p>
                         <!-- <i class="fas fa-equals"></i> -->
                     </span>
